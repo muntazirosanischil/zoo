@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Big Zoo Time</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="zoo.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="run()">
+<div id="everything">
+    <h1>Animal City</h1>
+    <div id="createAnimal">
+    <div>Make Animal:</div>
+        <select id="new">
+            <option>Leviathan</option>
+            <option>Pegasus</option>
+            <option>Cat</option>
+            <option>Gorilla</option>
+            <option>Micropachycephalosaurus</option>
+        </select>
+        <div>Animal Name: <input type="text" id="name"></div>
+        <button onclick="createAnimal()">Create</button>
+    </div>
+    <div id="feedAnimal">
+        <select id="food">
+            <option>Fish</option>
+            <option>Horse</option>
+            <option>Cat</option>
+            <option>Dog</option>
+            <option>Mouse</option>
+            <option>Octopus</option>
+        </select>
+        <button onclick="feedAnimal()">Feed</button>
+    </div>
+    <div id="delAnimal">
+        <div>Animal Name: <input type="text" id="nameDel"></div>
+        <button onclick="deleteAnimal()">Bye</button>
+    </div>
+    <div id="page">
+        <div id="put">
+        </div>
+    </div>
+        <div id="log">
+            <div id="sauce">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
